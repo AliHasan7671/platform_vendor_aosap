@@ -6,8 +6,14 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.com.google.clientidbase=$(PRODUCT_GMS_CLIENTID_BASE)
 endif
 
+# Backup Tool
+PRODUCT_COPY_FILES += \
+    vendor/aosap/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/aosap/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
+    vendor/aosap/prebuilt/common/bin/50-base.sh:system/addon.d/50-base.sh
+
 # General additions
-PRODUCT_PRODUCT_PROPERTIES += \
+PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true \
     dalvik.vm.debug.alloc=0 \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
@@ -37,12 +43,6 @@ PRODUCT_COPY_FILES += \
 # Init files
 PRODUCT_COPY_FILES += \
     vendor/aosap/prebuilt/common/etc/init.local.rc:system/etc/init/abc.rc
-
-# Backup tool
-#PRODUCT_COPY_FILES += \
-    #vendor/aosap/build/tools/backuptool.sh:install/bin/backuptool.sh \
-    #vendor/aosap/build/tools/backuptool.functions:install/bin/backuptool.functions \
-    #vendor/aosap/build/tools/50-aosap.sh:system/addon.d/50-aosap.sh
 
 # Packages
 include vendor/aosap/config/packages.mk
