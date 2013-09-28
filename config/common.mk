@@ -25,15 +25,11 @@ endif
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
-    vendor/aosap/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
-    vendor/aosap/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/aosap/prebuilt/common/bin/50-aosap.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/50-aosap.sh
+    vendor/custom/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/custom/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/custom/prebuilt/bin/50-example.sh:system/addon.d/50-example.sh \
+    vendor/custom/prebuilt/bin/blacklist:system/addon.d/blacklist
 
-ifneq ($(AB_OTA_PARTITIONS),)
-PRODUCT_COPY_FILES += \
-    vendor/aosap/prebuilt/common/bin/backuptool_ab.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_ab.sh \
-    vendor/aosap/prebuilt/common/bin/backuptool_ab.functions:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_ab.functions \
-    vendor/aosap/prebuilt/common/bin/backuptool_postinstall.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_postinstall.sh
 ifneq ($(TARGET_BUILD_VARIANT),user)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.ota.allow_downgrade=true
