@@ -194,6 +194,10 @@ PRODUCT_PACKAGES += \
 endif
 endif
 
+# Set custom volume steps
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.bt_sco_vol_steps=30
+
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/aosap/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/aosap/overlay/common
 
