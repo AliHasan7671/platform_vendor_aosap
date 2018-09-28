@@ -10,7 +10,8 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/aosap/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/aosap/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/aosap/prebuilt/common/bin/50-base.sh:system/addon.d/50-base.sh
+    vendor/aosap/prebuilt/common/bin/50-base.sh:system/addon.d/50-base.sh \
+    vendor/aosap/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 
 # General additions
 PRODUCT_PROPERTY_OVERRIDES += \
