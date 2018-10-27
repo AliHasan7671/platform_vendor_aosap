@@ -204,3 +204,4 @@ PRODUCT_EXTRA_RECOVERY_KEYS += \
 -include vendor/aosap/config/partner_gms.mk
 
 include vendor/aosap/config/BoardConfigAOSAP.mk
+include vendor/themes/common.mk
