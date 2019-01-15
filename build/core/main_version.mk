@@ -1,19 +1,17 @@
-# LineageOS System Version
+PRODUCT_VERSION = 1.0.0
+ifneq ($(AOSAP_BUILDTYPE),)
+AOSAP_VERSION := AOSAP-v$(PRODUCT_VERSION)-$(shell date +%Y%m%d)-$(AOSAP_BUILD)-$(AOSAP_BUILDTYPE)
+else
+AOSAP_VERSION := AOSAP-v$(PRODUCT_VERSION)-$(shell date +%Y%m%d)-$(AOSAP_BUILD)-Unofficial
+endif
+
+# AOSAP System Version
 ADDITIONAL_BUILD_PROPERTIES += \
-    ro.lineage.version=$(LINEAGE_VERSION) \
-    ro.lineage.releasetype=$(LINEAGE_BUILDTYPE) \
-    ro.lineage.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
-    ro.modversion=$(LINEAGE_VERSION) \
-    ro.lineagelegal.url=https://lineageos.org/legal
+    ro.aosap.version=$(AOSAP_VERSION) \
+    ro.aosap.releasetype=$(AOSAP_BUILDTYPE) \
+    ro.aosap.build.version=$(PRODUCT_VERSION) \
+    ro.modversion=$(AOSAP_VERSION) \
 
 # LineageOS Platform Display Version
 ADDITIONAL_BUILD_PROPERTIES += \
-    ro.lineage.display.version=$(LINEAGE_DISPLAY_VERSION)
-
-# LineageOS Platform SDK Version
-ADDITIONAL_BUILD_PROPERTIES += \
-    ro.lineage.build.version.plat.sdk=$(LINEAGE_PLATFORM_SDK_VERSION)
-
-# LineageOS Platform Internal Version
-ADDITIONAL_BUILD_PROPERTIES += \
-    ro.lineage.build.version.plat.rev=$(LINEAGE_PLATFORM_REV)
+    ro.aosap.display.version=$(AOSAP_DISPLAY_VERSION)
