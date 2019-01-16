@@ -202,3 +202,5 @@ PRODUCT_EXTRA_RECOVERY_KEYS += \
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/aosap/config/partner_gms.mk
+
+include vendor/aosap/config/BoardConfigAOSAP.mk
