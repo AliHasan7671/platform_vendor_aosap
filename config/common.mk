@@ -95,6 +95,9 @@ PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 # leave less information available via JDWP.
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 
+# Include AOSP audio files
+include vendor/aosap/config/aosp_audio.mk
+
 # Bootanimation
 PRODUCT_PACKAGES += \
     bootanimation.zip
