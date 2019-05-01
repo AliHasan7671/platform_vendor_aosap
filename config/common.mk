@@ -99,8 +99,8 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 include vendor/aosap/config/aosp_audio.mk
 
 # Bootanimation
-PRODUCT_PACKAGES += \
-    bootanimation.zip
+#PRODUCT_PACKAGES += \
+#    bootanimation.zip
 
 # Optional packages
 PRODUCT_PACKAGES += \
@@ -115,7 +115,6 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     Jelly \
     LockClock \
-    TrebuchetQuickStep \
     WallpaperPicker \
 
 # Extra tools in Lineage
@@ -135,6 +134,10 @@ PRODUCT_PACKAGES += \
     vim \
     wget \
     zip
+
+# Main Required Packages
+PRODUCT_PACKAGES += \
+    Launcher3 \
 
 # Charger
 PRODUCT_PACKAGES += \
