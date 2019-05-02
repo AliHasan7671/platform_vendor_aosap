@@ -116,6 +116,7 @@ PRODUCT_PACKAGES += \
     Jelly \
     LockClock \
     WallpaperPicker \
+    Updater
 
 # Extra tools in Lineage
 PRODUCT_PACKAGES += \
