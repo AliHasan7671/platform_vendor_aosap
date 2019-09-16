@@ -97,6 +97,17 @@ PRODUCT_COPY_FILES += vendor/aosap/bootanimation/bootanimation.zip:system/media/
 PRODUCT_PACKAGES += \
     Terminal
 
+# Custom Overlays
+# Settings
+PRODUCT_PACKAGES += \
+    SystemPitchBlackOverlay \
+    SystemDarkGrayOverlay \
+    SystemUIDarkGrayOverlay \
+    SystemStyleOverlay \
+    SystemUIStyleOverlay \
+    SystemNightOverlay \
+    SystemUINightOverlay
+
 # Extra tools in AOSAP
 PRODUCT_PACKAGES += \
     7z \
