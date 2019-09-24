@@ -34,10 +34,16 @@ PRODUCT_COPY_FILES += \
     vendor/aosap/prebuilt/common/bin/backuptool_ab.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_ab.sh \
     vendor/aosap/prebuilt/common/bin/backuptool_ab.functions:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_ab.functions \
     vendor/aosap/prebuilt/common/bin/backuptool_postinstall.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_postinstall.sh
+
+endif
+
+# system mount
+PRODUCT_COPY_FILES += \
+    vendor/aosap/build/tools/system-mount.sh:install/bin/system-mount.sh
+
 ifneq ($(TARGET_BUILD_VARIANT),user)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.ota.allow_downgrade=true
-endif
 endif
 
 # Backup Services whitelist
