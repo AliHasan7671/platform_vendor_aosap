@@ -11,3 +11,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Launcher3 \
     ThemePicker
+
+$(call inherit-product, vendor/aosap/prebuilt/common/prebuilt.mk)
