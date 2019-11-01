@@ -115,7 +115,8 @@ PRODUCT_PACKAGES += \
 
 #AOSAP
 PRODUCT_PACKAGES += \
-    ThemePicker
+    ThemePicker \
+    AosapThemesStub
 
 # Extra tools in AOSAP
 PRODUCT_PACKAGES += \
