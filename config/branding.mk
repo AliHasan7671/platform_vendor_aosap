@@ -2,7 +2,7 @@
 AOSAP_BASE_VERSION = Ten
 
 ifndef AOSAP_BUILD_TYPE
-    AOSAP_BUILD_TYPE := OFFICIAL
+    AOSAP_BUILD_TYPE := UNOFFICIAL
 endif
 
 # Set all versions
