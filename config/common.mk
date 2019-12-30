@@ -93,6 +93,10 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 # Bootanimation
 PRODUCT_COPY_FILES += vendor/aosap/bootanimation/bootanimation.zip:system/media/bootanimation.zip
 
+# Fonts
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,vendor/aosap/prebuilt/fonts,$(TARGET_COPY_OUT_SYSTEM)/fonts)
+
 # AOSP packages
 PRODUCT_PACKAGES += \
     Terminal
