@@ -1,2 +1,2 @@
 # Inherit common stuff
-$(call inherit-product, vendor/nexus/config/common.mk)
+$(call inherit-product, vendor/aosap/config/common.mk)

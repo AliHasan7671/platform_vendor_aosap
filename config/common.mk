@@ -32,27 +32,27 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
 
 PRODUCT_COPY_FILES += \
-    vendor/nexus/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
+    vendor/aosap/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
 
 # Init files
 PRODUCT_COPY_FILES += \
-    vendor/nexus/prebuilt/common/etc/init.local.rc:system/etc/init/abc.rc
+    vendor/aosap/prebuilt/common/etc/init.local.rc:system/etc/init/abc.rc
 
 # Backup tool
 #PRODUCT_COPY_FILES += \
-    #vendor/extras/build/tools/backuptool.sh:install/bin/backuptool.sh \
-    #vendor/extras/build/tools/backuptool.functions:install/bin/backuptool.functions \
-    #vendor/extras/build/tools/50-du.sh:system/addon.d/50-du.sh
+    #vendor/aosap/build/tools/backuptool.sh:install/bin/backuptool.sh \
+    #vendor/aosap/build/tools/backuptool.functions:install/bin/backuptool.functions \
+    #vendor/aosap/build/tools/50-aosap.sh:system/addon.d/50-aosap.sh
 
 # Packages
-include vendor/nexus/config/packages.mk
+include vendor/aosap/config/packages.mk
 
 # Branding
-include vendor/nexus/config/branding.mk
+include vendor/aosap/config/branding.mk
 
 # Themes
-include vendor/themes/common.mk
+include vendor/aosap/common.mk
 
 # Overlays
-PRODUCT_PACKAGE_OVERLAYS += vendor/nexus/overlay/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/aosap/overlay/common
 

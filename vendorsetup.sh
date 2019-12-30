@@ -1,8 +1,8 @@
-devices=('taimen' 'bonito')
+devices=('guacamole' 'wayne')
 
 function lunch_devices() {
-    add_lunch_combo abc_${device}-user
-    add_lunch_combo abc_${device}-userdebug
+    add_lunch_combo aosap_${device}-user
+    add_lunch_combo aosap_${device}-userdebug
 }
 
 for device in ${devices[@]}; do

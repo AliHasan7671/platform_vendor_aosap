@@ -7,4 +7,4 @@
 PRODUCT_PACKAGES += \
     librsjni
     
-$(call inherit-product, vendor/nexus/prebuilt/prebuilt.mk)
+$(call inherit-product, vendor/aosap/prebuilt/prebuilt.mk)
