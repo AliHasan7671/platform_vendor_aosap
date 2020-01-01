@@ -6,5 +6,3 @@
 # Include librsjni explicitly to workaround GMS issue
 PRODUCT_PACKAGES += \
     librsjni
-    
-$(call inherit-product, vendor/aosap/prebuilt/prebuilt.mk)
