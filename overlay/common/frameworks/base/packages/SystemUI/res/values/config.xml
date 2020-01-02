@@ -30,5 +30,8 @@
     <string name="quick_settings_tiles_default" translatable="false">
         wifi,cell,battery,dnd,flashlight,rotation,bt,airplane,nfc,location,hotspot,inversion,saver,dark,work,cast,night
     </string>
+
+    <string name="launcher_overlayable_package">com.android.launcher3</string>
+    <string name="themepicker_overlayable_package">com.android.apps.wallpaper</string>
     
 </resources>
