@@ -21,6 +21,6 @@
     <bool name="config_show_system_update_settings">false</bool>
 
     <!-- Package name and fully-qualified class name for the wallpaper picker activity. -->
-    <string name="config_wallpaper_picker_package" translatable="false">com.android.apps.wallpaper</string>
-    <string name="config_wallpaper_picker_class" translatable="false">com.android.apps.wallpaper.picker.CategoryPickerActivity</string>
+    <string name="config_wallpaper_picker_package" translatable="false">com.google.android.apps.wallpaper</string>
+    <string name="config_wallpaper_picker_class" translatable="false">com.google.android.apps.wallpaper.picker.CategoryPickerActivity</string>
 </resources>
