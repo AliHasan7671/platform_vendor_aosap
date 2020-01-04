@@ -53,6 +53,9 @@ include vendor/aosap/config/branding.mk
 # Themes
 include vendor/themes/common.mk
 
+# Gapps
+include vendor/gapps/config.mk
+
 # Overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/aosap/overlay/common
 
