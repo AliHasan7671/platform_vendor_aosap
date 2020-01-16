@@ -54,7 +54,9 @@ include vendor/aosap/config/branding.mk
 include vendor/themes/common.mk
 
 # Gapps
+ifeq ($(WITH_GAPPS), true)
 include vendor/gapps/config.mk
+endif
 
 # Overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/aosap/overlay/common
