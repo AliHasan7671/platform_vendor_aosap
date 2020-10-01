@@ -37,10 +37,6 @@ PRODUCT_COPY_FILES += \
 
 endif
 
-# system mount
-PRODUCT_COPY_FILES += \
-    vendor/aosap/build/tools/system-mount.sh:install/bin/system-mount.sh
-
 ifneq ($(TARGET_BUILD_VARIANT),user)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.ota.allow_downgrade=true
