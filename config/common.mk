@@ -118,6 +118,11 @@ PRODUCT_PACKAGES += \
     ThemePicker \
     AosapThemesStub
 
+# Navbar
+PRODUCT_PACKAGES += \
+    GesturalNavigationOverlayLong \
+    GesturalNavigationOverlayMedium
+
 # Extra tools in AOSAP
 PRODUCT_PACKAGES += \
     7z \
