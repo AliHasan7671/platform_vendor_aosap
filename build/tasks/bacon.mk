@@ -16,7 +16,7 @@
 # -----------------------------------------------------------------
 # AOSAP OTA update package
 
-AOSAP_TARGET_PACKAGE := $(PRODUCT_OUT)/AOSAP-$(AOSAP_VERSION).zip
+AOSAP_TARGET_PACKAGE := $(PRODUCT_OUT)/$(AOSAP_VERSION).zip
 
 .PHONY: bacon
 bacon: $(INTERNAL_OTA_PACKAGE_TARGET)
