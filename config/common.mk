@@ -66,7 +66,7 @@ PRODUCT_COPY_FILES += \
 
 # Enforce privapp-permissions whitelist
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.control_privapp_permissions=enforce
+    ro.control_privapp_permissions=false
 
 # Include AOSP audio files
 include vendor/aosap/config/aosp_audio.mk
