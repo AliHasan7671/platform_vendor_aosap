@@ -108,6 +108,10 @@ PRODUCT_PACKAGES += \
     SystemNightOverlay \
     SystemUINightOverlay
 
+#AOSAP
+PRODUCT_PACKAGES += \
+    ThemePicker
+
 # Extra tools in AOSAP
 PRODUCT_PACKAGES += \
     7z \
