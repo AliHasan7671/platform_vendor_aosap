@@ -32,4 +32,7 @@
         <item>com.android.dialer</item>
         <item>com.android.email</item>
     </array>
+
+    <string name="themes_stub_package" translatable="false">org.aosap.customisation</string>
+
 </resources>
