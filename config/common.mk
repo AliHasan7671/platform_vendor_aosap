@@ -118,6 +118,11 @@ PRODUCT_PACKAGES += \
     ThemePicker \
     AosapThemesStub
 
+#OmniJaws
+PRODUCT_PACKAGES += \
+    OmniJaws \
+    WeatherIcons
+
 # Navbar
 PRODUCT_PACKAGES += \
     GesturalNavigationOverlayLong \
