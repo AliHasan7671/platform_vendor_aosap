@@ -28,6 +28,7 @@ PRODUCT_COPY_FILES += \
     vendor/aosap/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/aosap/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/aosap/prebuilt/common/bin/50-aosap.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/50-aosap.sh
+    vendor/aosap/build/tools/50-aosap.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/50-aosap.sh
 
 ifneq ($(AB_OTA_PARTITIONS),)
 PRODUCT_COPY_FILES += \
