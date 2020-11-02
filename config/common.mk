@@ -24,16 +24,22 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=1
 endif
 
 # Backup Tool
+# Backup Tool
+ifeq ($(AB_OTA_UPDATER),true)
 PRODUCT_COPY_FILES += \
-    vendor/custom/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
-    vendor/custom/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions \
-    vendor/custom/prebuilt/bin/50-example.sh:system/addon.d/50-example.sh \
-    vendor/custom/prebuilt/bin/blacklist:system/addon.d/blacklist
+    vendor/aosap/prebuilt/common/bin/backuptool_ab.sh:system/bin/backuptool_ab.sh \
+    vendor/aosap/prebuilt/common/bin/backuptool_ab.functions:system/bin/backuptool_ab.functions \
+    vendor/aosap/prebuilt/common/bin/backuptool_postinstall.sh:system/bin/backuptool_postinstall.sh
+else
+PRODUCT_COPY_FILES += \
+    vendor/aosap/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/aosap/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/aosap/prebuilt/bin/blacklist:system/addon.d/blacklist
+endif
 
 ifneq ($(TARGET_BUILD_VARIANT),user)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.ota.allow_downgrade=true
-endif
 endif
 
 # Backup Services whitelist
