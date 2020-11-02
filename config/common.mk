@@ -51,6 +51,7 @@ PRODUCT_COPY_FILES += \
     vendor/aosap/build/tools/backuptool_ab.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_ab.sh \
     vendor/aosap/build/tools/backuptool_ab.functions:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_ab.functions \
     vendor/aosap/build/tools/backuptool_postinstall.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_postinstall.sh
+endif
 
 # Enable Android Beam on all targets
 PRODUCT_COPY_FILES += \
